@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Notícia</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+}
+
+.container{
+  width:900px;
+  margin:20px auto;
+}
+
+/* IMAGEM PRINCIPAL */
+.main{
+  position:relative;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.main img{
+  width:100%;
+  display:block;
+}
+
+.overlay{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:linear-gradient(transparent, rgba(0,0,0,0.8));
+  color:#fff;
+  padding:20px;
+}
+
+.overlay h1{
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+/* BARRA VERMELHA */
+.red-bar{
+  background:#c40000;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+  font-size:14px;
+}
+
+.red-bar div{
+  width:30%;
+}
+
+/* CARDS */
+.cards{
+  display:flex;
+  gap:15px;
+  margin-top:15px;
+}
+
+.card{
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  width:33%;
+}
+
+.card img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:10px;
+}
+
+.card h3{
+  color:#c40000;
+  font-size:16px;
+  margin-bottom:5px;
+}
+
+.card p{
+  font-size:13px;
+  color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- IMAGEM PRINCIPAL -->
+  <div class="main">
+    <img src="imagem.png.png">
+    <div class="overlay">
+    </div>
+  </div>
+
+  <!-- BARRA VERMELHA -->
+  <div class="red-bar">
+    <div>• Israel ataca reunião que definiria o novo líder do Irã, diz jornal</div>
+    <div>• Agência: estrondos são ouvidos em Dubai, Abu Dhabi e Doha; SIGA</div>
+    <div>• General do Irã ameaça centros econômicos do Oriente Médio</div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards">
+
+    <div class="card">
+      <img src="imagem2.png">
+      <div class="card-content">
+        <h3>Multidão no Irã vai a funeral de crianças; ONU pede apuração</h3>
+        <p>• Escalada nuclear pode ser fatal, diz especialista</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagem3.png">
+      <div class="card-content">
+        <h3>Trump ameaça usar bases da Espanha sem autorização</h3>
+        <p>• O que está por trás do conflito entre EUA e Irã?</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagem4.png">
+      <div class="card-content">
+        <h3>Valores da guerra: drones de US$ 20 mil x mísseis de US$ 4 mi</h3>
+        <p>• Emirados criam corredor de segurança para voos</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
